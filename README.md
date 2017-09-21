@@ -1,5 +1,5 @@
 # BetterDocking
-A Mod for Avorion that enforces a system wide don't drink and drive - policy for tradeship pilots
+A Mod for Avorion that enforces a system wide don't drink and fly - policy for tradeship pilots
 
 # What it does:
 
