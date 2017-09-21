@@ -9,3 +9,8 @@ A Mod for Avorion that enforces a system wide don't drink and drive - policy for
 
 # What it does not:
 - Enforce aforementioned policy. They still do what they want... It's just that their autopilot got a decent upgrade now :P
+
+
+P.S.:
+comes bundled with LogLevels from the great Dirtyredz <3
+https://github.com/dirtyredz/LogLevels
