@@ -7,11 +7,14 @@ print = function(...)
   if Server == nil then
       oldprint(...)
   else
-
     --Get server value set via cmd or server.lua
     local InfoLevel = levels.info or 400
     local ServerSetting = Server():getValue('log_level') or InfoLevel
-    local CurrentLevel = tonumber(ServerSetting)
+    local LogCurrentLevel = tonumber(ServerSetting)
+
+    local ConsoleServerSetting = Server():getValue('console_level') or InfoLevel
+    local ConsoleCurrentLevel = tonumber(ConsoleServerSetting)
+
     --Assume level info
     local PrintLevel = InfoLevel
     local args = table.pack(...)
@@ -44,14 +47,14 @@ print = function(...)
     end
 
     --add prepend to begging of message
-    args[1] = prepend .. args[1]
+    table.insert(args,1,prepend)
     --if we had a log level remove it so its not printed
     if hadPrintLevel then args[#args] = nil end
 
     --if were printing this message
-    if PrintLevel <= CurrentLevel then
+    if PrintLevel <= ConsoleServerSetting then
       oldprint(table.unpack(args))
-    else
+    elseif PrintLevel <= LogCurrentLevel then
       printlog(table.unpack(args))
     end
   end
