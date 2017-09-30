@@ -1,5 +1,8 @@
 # BetterDocking
 A Mod for Avorion that enforces a system wide don't drink and fly - policy for tradeship pilots
+# current release: 
+https://github.com/kalvindukes/BetterDocking/releases/latest
+
 
 # What it does:
 - prevents Traders from crashing into stations (and other things) at all costs. (Please share findings with me in case that you can actually make them fly into things again)
