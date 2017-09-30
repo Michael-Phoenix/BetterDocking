@@ -1,6 +1,6 @@
 # BetterDocking
 A Mod for Avorion that enforces a system wide don't drink and fly - policy for tradeship pilots
-# [current release](https://github.com/kalvindukes/BetterDocking/releases/latest)
+# [Download current release](https://github.com/kalvindukes/BetterDocking/releases/latest)
 
 
 # What it does:
